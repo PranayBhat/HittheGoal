@@ -39,7 +39,7 @@ window.addEventListener("keydown", my_keydown);
 function my_keydown(e) {
   keyPressed = e.keyCode;
   console.log(keyPressed);
-  if (Tenis_x == (hole_x +1 )&& Tenis_y == (hole_y +1)) {
+  if (Tenis_x> hole_x  && Tenis_y > hole_y) {
     canvas.remove(Tenis_obj);
     console.log("You have Hit the Goal!!!");
     document.getElementById("hd3").innerHTML = "You have Hit the Goal!!!";
